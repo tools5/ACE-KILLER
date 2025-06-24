@@ -7,6 +7,7 @@ PySide6 GUI界面模块
 
 import os
 import sys
+import webbrowser  # ✅ 就放在这里！
 import threading
 import subprocess
 import time
@@ -728,8 +729,6 @@ class MainWindow(QWidget):
         self.tray_icon.show()
         
         tray_menu.addSeparator()
-
-        import webbrowser  # 确保顶部已导入
 
         # 打开官网动作
         open_website_action = QAction("梯子加速官网", self)
