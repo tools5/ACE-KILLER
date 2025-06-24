@@ -728,7 +728,16 @@ class MainWindow(QWidget):
         self.tray_icon.show()
         
         tray_menu.addSeparator()
-        
+
+        import webbrowser  # 确保顶部已导入
+
+        # 打开官网动作
+        open_website_action = QAction("梯子加速官网", self)
+        open_website_action.triggered.connect(lambda: webbrowser.open("https://ktcat.su"))
+        tray_menu.addAction(open_website_action)
+
+        tray_menu.addSeparator()
+
         # 退出动作
         exit_action = QAction("退出", self)
         exit_action.triggered.connect(self.confirm_exit)
@@ -1401,7 +1410,7 @@ class MainWindow(QWidget):
             
             msg_box.exec()
             if msg_box.clickedButton() == get_version_btn:
-                github_url = extra_data.get('github_url', 'https://github.com/cassianvale/ACE-KILLER/releases')
+                github_url = extra_data.get('github_url', 'https://github.com/tools5/ACE-KILLER/releases')
                 webbrowser.open(github_url)
                 
         elif msg_type == "update":
@@ -1489,7 +1498,7 @@ class MainWindow(QWidget):
             "作者: CassianVale\n\n"
             "作者: 煎饺\n\n"
             "ACE-KILLER是一款游戏优化工具，用于监控并优化游戏进程\n\n"
-            "💡 如果这个工具对您有帮助，欢迎访问官网：\n"
+            "💡 如果这个工具对您有帮助，欢迎访问官网：Ktcat.su\n"
             "   • 分享给更多需要的朋友\n\n"
             "您的支持是项目持续改进的动力！\n\n"
             "是否访问项目官网？"

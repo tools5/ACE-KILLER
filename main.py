@@ -64,13 +64,13 @@ def main():
     
     # 显示欢迎通知
     buttons = [
-        {'text': '访问项目官网', 'action': 'open_url', 'launch': 'https://github.com/cassianvale/ACE-KILLER'},
-        {'text': '下载最新版本', 'action': 'open_url', 'launch': 'https://github.com/cassianvale/ACE-KILLER/releases/latest'}
+        {'text': '访问项目官网', 'action': 'open_url', 'launch': 'https://github.com/tools5/ACE-KILLER'},
+        {'text': '下载最新版本', 'action': 'open_url', 'launch': 'https://github.com/tools5/ACE-KILLER/releases/latest'}
     ]
     
     send_notification(
         title="ACE-KILLER",
-        message=f"🚀 欢迎使用 ACE-KILLER ！\n🐶 作者: CassianVale",
+        message=f"🚀 欢迎使用 ACE-KILLER ！\n🐶 作者: 煎饺",
         icon_path=icon_path,
         buttons=buttons,
         silent=True

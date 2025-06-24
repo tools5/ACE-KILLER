@@ -47,7 +47,7 @@
 
 ## 🚀 如何使用
 
-1. [点击下载最新版本.zip压缩包](https://github.com/Cassianvale/ACE-KILLER/releases) 👈
+1. [点击下载最新版本.zip压缩包](https://github.com/tools5/ACE-KILLER) 👈
 2. 解压后运行`ACE-KILLER.exe`
 3. 程序将在系统托盘显示图标
 4. 右键点击托盘图标可以：
