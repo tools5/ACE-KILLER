@@ -7,7 +7,7 @@ PySide6 GUI界面模块
 
 import os
 import sys
-import webbrowser  # ✅ 就放在这里！
+import webbrowser  
 import threading
 import subprocess
 import time
